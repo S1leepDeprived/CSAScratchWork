@@ -1,4 +1,13 @@
 public class FindMinimum {
-   public static void main(String[] args) {
+   public static int findMin() {
+   int minNum = 100;
+      for(int i =0; i<10; i++) {
+         int randNum= (int) (Math.random()*100);
+         if (randNum < minNum) {
+            minNum=randNum;
+         }
+      }
+         return minNum;
+
    }
 }
