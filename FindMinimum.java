@@ -10,4 +10,7 @@ public class FindMinimum {
          return minNum;
 
    }
+   public static void main(String[] args) {
+      System.out.println("result of findMin = " + findMin());
+   }
 }
