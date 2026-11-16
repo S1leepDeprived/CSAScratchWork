@@ -26,9 +26,10 @@ public class KillCilantro {
          System.out.println("test"+replaceWord);
        }
 
-   return null;
+   return str;
    }
     return str;
+    
    } 
   
 }
