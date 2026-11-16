@@ -11,8 +11,14 @@ public class KillCilantro {
         int inputlength = str.length();
         String replaceWord = "parsley";
         String data = "cilantro";
+        
+                                    
+        while (num < inputlength) {
+         num++;
+         
+        }
        
-      num =inputlength;
+     
       if(num == 16) {
       System.out.println("test"+replaceWord+"test");
        } if(num == 11) {
@@ -25,6 +31,7 @@ public class KillCilantro {
        } else if (str == "testcilantro") {
          System.out.println("test"+replaceWord);
        }
+       
 
    return str;
    }
