@@ -1,10 +1,12 @@
 public class KillCilantro {
    public static void main(String[] args) {
-      killCilantro("testcilantrotest");
-      killCilantro("cilantrotest");
-      killCilantro("nothinghere");
-      killCilantro("testcilantro");
-      killCilantro("cilantrocilantrocilantro");
+      System.out.println(killCilantro("testcilantrotest"));
+     System.out.println(killCilantro("cilantrotest"));
+      System.out.println(killCilantro("nothinghere"));
+      System.out.println(killCilantro("testcilantro"));
+      System.out.println(killCilantro("cilantrocilantrocilantro"));
+     
+
    }
    public static String killCilantro(String str) {
         int num =0;
@@ -14,29 +16,16 @@ public class KillCilantro {
         
                                     
         while (num < inputlength) {
-         num++;
+        num++;
+            if (num == inputlength) {
+               str= str.replace("cilantro",replaceWord);
+               }
+            }
          
-        }
+         return str;
+      }
        
-     
-      if(num == 16) {
-      System.out.println("test"+replaceWord+"test");
-       } if(num == 11) {
-      System.out.println("nothinghere");
-       }  if(num == 24) {
-      System.out.println(replaceWord+replaceWord+replaceWord);
-       } if (num==12) {      
-         if (str == "cilantrotest") {
-         System.out.println(replaceWord+"test");
-       } else if (str == "testcilantro") {
-         System.out.println("test"+replaceWord);
-       }
-       
-
-   return str;
-   }
-    return str;
+        
     
-   } 
   
 }
