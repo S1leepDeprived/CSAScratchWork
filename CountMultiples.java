@@ -6,7 +6,11 @@ public class CountMultiples {
          if(i % devisier == 0)
          {
             count++;
-            //System.out.print(i);
+           
+            if (i==0) {
+              
+               count -=1;
+            }
          } 
       }
       return count;
@@ -14,13 +18,13 @@ public class CountMultiples {
    
    public static void main(String args[]) {
       System.out.println(countMultiples(20, 3));
-     // System.out.println(countMultiples(100, 5));
-     // System.out.println(countMultiples(12, 4));
-     // System.out.println(countMultiples(5, 10));
-     // System.out.println(countMultiples(15, 1));
-     //  System.out.println(countMultiples(7, 7));
-     // System.out.println(countMultiples(10, 2));
-     //  System.out.println(countMultiples(0, 3));
+      System.out.println(countMultiples(100, 5));
+      System.out.println(countMultiples(12, 4));
+      System.out.println(countMultiples(5, 10));
+      System.out.println(countMultiples(15, 1));
+       System.out.println(countMultiples(7, 7));
+      System.out.println(countMultiples(10, 2));
+       System.out.println(countMultiples(0, 3));
    
    }
 }
